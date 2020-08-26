@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Registration Page</title>
+ <link rel = "icon" href ="images/chan.jpg" type = "image/x-icon"> 
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+  background-color: lightgray;
+}
+</style>
+</head>
+<body>
+ <center>
+<form action="RegisterJSP.jsp" method="post">
+<fieldset>
+<legend>Account Registration</legend>
+<table>
+	<tr>
+		<td>Enter your Name </td>
+		<td><input type="text"  placeholder=" Name" name="name"></td>
+	</tr>
+	<tr>
+		<td>Enter your Password </td>
+		<td><input type="password" placeholder=" Password" name="pword"></td>
+	</tr>
+	<tr>
+		<td>Enter your Email Id </td>
+		<td><input type="email" placeholder=" Email Id" name="ename" required></td>
+	</tr>
+	<tr>
+		<td>Enter your Mobile Number </td>
+		<td><input type="text" placeholder=" Mobile Number" name="mname"></td>
+	</tr>
+	 <tr>
+      <td><label class="form-check-label"></label></td><br>
+        <td><input class="form-check-input" type="checkbox" name="remember" required>I have agreed to the policy</td>   
+    </tr>
+	
+</table>
+ <center><input type="submit" class="btn btn-primary"  value="Register"></center>
+</fieldset>
+</form> <center>
+</body>
+</html>

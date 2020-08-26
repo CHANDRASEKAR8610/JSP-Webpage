@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+  <title>JSP HomePage</title>
+  <link rel = "icon" href ="images/chan.jpg" type = "image/x-icon"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+ <style> 
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+  </style>
+</head>
+<body style="background:lightgray;">
+
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/auto1.jpeg" style="width:100%;height:250px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">    
+     <center> <h3>India</h3>
+      <p><b>A land of fertility</b></p> </center>   
+    </div>
+  </div>
+  
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/auto2.jpg" style="width:100%;height: 250px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <center><h3>Enjoy Our Website</h3>
+      <p><b>Thank you, we won't forget it</b></p></center>    
+  	</div>
+  </div>
+  
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/auto3.jpg" style="width:100%;height: 250px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <center><h3>Enjoy Our Website</h3>
+      <p><b>Thank you, we won't forget it</b></p></center>    
+  	</div>
+  </div>
+
+
+<div class="topnav">
+  <a class="active" href="Login.html">Projects</a>
+  <a href="News.html">News</a>
+  <a href="Contact.html">Contact</a>
+  <div class="topnav-right">
+    <a href="Registration.html">Register</a>
+    <a href="Login.html">Log In</a>
+  </div>
+</div>
+
+
+<div class="container">
+  <h3>About me</h3>
+  <p>I am Chandrasekar Oracle certified in Java 8 SE programming. I have completed BE in Electronics and Communication Engineering at SSMIET.Now I have decided to go with web designing. This is my webpage and have fun !</p>  
+   <center><iframe width="560" height="315" src="https://soundcloud.com/datastaxradio" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+   </iframe></center>  
+</div>
+</div>
+
+ <h1>Run a Program</h1> 
+      This script launch the file any Exe File<p> 
+      <button onclick="">Run Exe File</button>
+   
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+</script>
+
+
+</body>
+</html>

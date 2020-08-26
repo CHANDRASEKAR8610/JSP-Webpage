@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Login Page</title>
+ <link rel = "icon" href ="images/chan.jpg" type = "image/x-icon"> 
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+  background-color: lightgray;
+}
+</style>
+</head>
+
+<body id="body">
+<center>
+  <h2>Have a lot of fun !</h2>
+  <form action="LoginJSP.jsp" method="post">
+  <fieldset>
+<legend>User Login Information</legend>
+<table>
+	<tr> 
+      <th>Name </th>
+     <td> <input type="text"   placeholder="your Name" name="uname" >  </td>
+    </tr>
+    <tr> 
+     <th>Password </th>
+     <td> <input type="password"   placeholder="your password" name="pname"> </td>
+    </tr>
+    <tr>
+      <td><label class="form-check-label"></label></td><br>
+        <td><input class="form-check-input" type="checkbox" name="remember" required> Remember me</td>   
+    </tr>
+    <tr> 
+    </tr>
+</table>
+		 <center><input type="submit" class="btn btn-primary"  value="Login"></center>
+</fieldset>
+  </form>
+  
+  If you don't have any account, register <a href="Registration.html">here</a>
+  </center>
+</body>
+</html>

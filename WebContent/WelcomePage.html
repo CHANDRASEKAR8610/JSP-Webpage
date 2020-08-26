@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Welcome Page</title>
+ <link rel = "icon" href ="images/chan.jpg" type = "image/x-icon"> 
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+body {
+	background-color: lightgray;
+     }
+#para1 {
+	background-color: lightgray;
+	color: white;
+	font-size: 60px; 
+       }
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+
+
+a.ex1:hover, a.ex1:active {background: darkgrey;height: 40px;}
+a.ex2:hover, a.ex2:active {background: darkgrey;height: 40px;}
+a.ex3:hover, a.ex3:active {background: darkgrey;height: 40px;}
+</style>
+</head>
+<body>
+<iframe src="frame.jsp" scrolling="no" style="height:32%;width:100%;border:none;">Sorry, no Internet !</iframe>
+
+
+<div class="topnav">
+  <a class="active" href="logout.jsp">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <div class="topnav-right">
+    <a href="#search">Search</a>
+    <a class="navbar-brand" data-toggle="tooltip" title="Log Out!" href="logout.jsp" name="logout">
+    	<img src="images/log-out.jpg" alt="logo" style="width:30px;height:27px;">
+  	 </a>
+  </div>
+</div>
+
+
+<p><h1 style="color:yellow">WELCOME TO OUR SITE</h1></p>
+<marquee><img src="images/123.jpg" height=50%><img src="images/456.jpg" height=50%></marquee>
+
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+
+</body>
+</html>

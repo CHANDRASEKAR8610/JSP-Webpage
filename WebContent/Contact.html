@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>News</title>
+ <link rel = "icon" href ="images/chan.jpg" type = "image/x-icon"> 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  
+ <style> 
+ .topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+}
+  </style>
+</head>
+<body style="background:lightgray;">
+
+   <!-- Automatic Slideshow Images -->  
+    <div class="mySlides w3-display-container w3-center">
+    <img src="images/auto1.jpeg" style="width:100%;height:250px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">    
+     <center><h3>Enjoy Our Website</h3>
+      <p><b>Thank you, we won't forget it</b></p></center>   
+    </div>
+  </div>
+  
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/auto2.jpg" style="width:100%;height: 250px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <center><h3>Enjoy Our Website</h3>
+      <p><b>Thank you, we won't forget it</b></p></center>    
+  	</div>
+  </div>
+  
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/auto3.jpg" style="width:100%;height: 250px;">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <center><h3>Enjoy Our Website</h3>
+      <p><b>Thank you, we won't forget it</b></p></center>    
+  	</div>
+  </div>
+
+
+<div class="topnav">
+  <a class="active" href="Home.html">Home</a>
+  <a href="Login.html">Projects</a>
+  <a href="News.html">News</a>
+  <a href="#contact">Contact</a>
+  <div class="topnav-right">
+    <a href="Registration.html">Register</a>
+    <a href="Login.html">Log In</a>
+  </div>
+</div>
+
+
+<div class="container">
+  <h3><img src="images/covidicon.jpg" style="width:50px;height:50px;">Contact</h3>
+   <ul>
+  <li>Author : Chandrasekar B</li>
+  <br><br>
+  <li>Address: No. 24/26 Chatram Street,<br/> Opposite to DOlphin Hotels,<br/>Dindigul,<br/>TamilNadu,<br/>India - 624001.</li>
+  <br><br>
+  <li>Email: chandrasekar.b03@gmail.com</li>
+  <br>
+  <li>Mobile: +91-8610444257</li>
+  <br>
+</ul>     
+</div>
+
+</div>
+   
+
+
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 4000);    
+}
+</script>
+
+
+</body>
+</html>
